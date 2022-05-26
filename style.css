@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+header{
+    /* padding: 20px; */
+    padding: 5px 48px;
+    /* position: fixed ; */
+    width: 100%;
+    /* height: 100px; */
+    
+    /* transition: 0.2s ease-in-out; */
+}
+.img img{
+    height: 80px;
+    /* border-radius: 10px; */
+    /* overflow: hidden; */
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+.sticky + .aboutus {
+    margin-top: 200px;
+  }
+.licontainer
+{
+    margin-right: 20px;
+}
+.licontainer ul{
+    display: flex;
+    overflow: hidden;
+    height: auto;
+  
+   
+
+}
+.licontainer ul li{
+    padding: 30px;
+    list-style: none;
+}
+.licontainer ul li a{
+    text-decoration: none;
+    color: black;
+}
+.toggle{
+    height: 10px;
+    color: black;
+    width: 40px;
+    background-color: black;
+    position: absolute;
+     right: -70vw;
+     visibility: hidden;
+     cursor: pointer;
+     transition: 0.1s ease-in-out;
+    }
+    .rotate{
+    transform: rotate(90deg);
+
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#liitems{
+    
+    /* transition: 0.2s ease-in-out; */
+    overflow: hidden;
+   
+display: flex;
+justify-content: end;
+}
+.visibility{
+   
+    
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        padding: 30px;
+    }
+   nav
+   {
+       align-items: flex-start;
+       flex-direction: column;
+       justify-content: center;
+
+       /* justify-content: flex-start; */
+   }
+
+.licontainer ul
+{
+    
+    flex-direction: column;
+/* height: 0; */
+/* height: auto; */
+}
+.licontainer ul li{
+    padding: 20px 5px;
+}
+.visibility{
+    height: 0px;
+    /* visibility: hidden; */
+    
+    width: 100%;
+
+}
+
+.img{
+    /* width: 100%; */
+}
+.abcc{
+    height: 20vh;
+    background-color: aqua;
+}
+.toggle{
+    visibility: visible;
+}
+#liitems{
+    background: rgb(34, 70, 102);
+    width: 100%;
+    justify-content: start;
+}
+  }
+  .aboutus{
+      height: 50vh;
+      background-color: rgb(107, 248, 154);
+      text-align: center;
+      margin: 50px 50px;
+      color: white;
+      /* transition: 0.2s ease-in-out; */
+  }
+ 
+  header{
+      background-color: bisque;
+  }
+
+  .top{
+      background-color: rgba(0, 0, 0, 0.336);
+      color: white;
+      position: fixed;
+      padding: 20px;
+      right: 5%;
+      top: 90%;
+      border-radius: 100px;
+z-index: 100000000;
+display: block;
+cursor: pointer;
+  }
+  .top a{
+      color: white;
+      text-align: center;
+text-decoration: none;
+  }
+  .visibility{
+      margin-top: 20px;
+      transition: 0.2s ease-in-out;
+      border-radius: 10px;
+    }
+    .a{
+        
+        transition: 0.2s ease-in-out;
+  }
+  .sticky{
+      position: fixed;
+      top: 0%;
+  }
+  /* .visibility + .aboutus{
+    margin-top: 10000px;
+  } */
